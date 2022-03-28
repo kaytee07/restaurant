@@ -21,6 +21,8 @@ const main = (_) => {
   menu1.classList.add("first");
   menu2.classList.add("second");
   menu3.classList.add("third");
+  divTabs.style.fontFamily = "sans-serif"
+  divTab2.style.margin = "0px 20px"
 
 
   const appendChild = (main, child) => {
@@ -32,9 +34,9 @@ const main = (_) => {
   }
 
   const mains = (_) => {
-   [header, main ].map((item, index)=> {
-       appendChild(content, item)
-   })
+    appendChild(content, section)
+    appendChild(section, header)
+    appendChild(section, main)
  };
 
  const navBar = _ => {
@@ -57,12 +59,53 @@ const main = (_) => {
    document.getElementsByClassName("third")[0].innerHTML = "Contact Us";
  }
 
+ const mainjs = _ => {
+  let main = document.createElement("main");
+  let div = document.createElement("div");
+  let order = document.createElement("button");
+  let catchy = document.createElement("h4")
+  main.classList.add("change");
+  div.classList.add("catch_phrase");
+  order.classList.add("order");
+  catchy.innerHTML = "The only thing we love more than food is you!";
+  order.innerHTML = "Order Now!";
+
+   appendChild(section, main)
+   appendChild(main, div)
+   appendChild(main, order)
+   appendChild(div, catchy)
+   
+   console.log(section)
+
+ }
+
+ const runOnOpen = _ => {
+   document.querySelector(".landing_page").appendChild
+ }
+
+ const listeners = _ => {
+   divTab1.addEventListener("click", ()=> {
+     console.log("yh")
+   })
+
+   divTab2.addEventListener("click", () => {
+     console.log("no")
+   });
+
+   divTab3.addEventListener("click", () => {
+      console.log("ph")
+   });
+   
+ }
+
  
 
 const render = _ => {
+
     mains()
     navBar();
-    console.log(content)
+    listeners();
+    mainjs()
 }
 
   render()
