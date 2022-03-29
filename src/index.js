@@ -1,3 +1,6 @@
 import main from "./main";
+import contactus from "./contactus";
+import './style.css'
 
-console.log(main())
+// main().render();
+contactus()
