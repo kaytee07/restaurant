@@ -7,16 +7,28 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   devtool: "inline-source-map",
-  module:{
-      rules:[
-          {
-              test:/\.ttf$/i,
-              type:"asset/resource"
-          },
-          {
-            test:/\.css$/,
-            use:["style-loader", "css-loader"]
-          },
-      ]
-  }
+  module: {
+    rules: [
+      {
+        test: /\.ttf$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        include: path.resolve(
+          __dirname,
+          "./node_modules/bootstrap-icons/font/fonts"
+        ),
+        options: {
+          name: "[name].[ext]",
+          outputPath: "webfonts",
+          publicPath: "../webfonts",
+        },
+      },
+    ],
+  },
 };

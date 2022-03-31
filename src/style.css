@@ -201,3 +201,24 @@ label{
 .number{
     margin-bottom: 15px;
 }
+
+.active{
+    border-bottom: 2px solid white;
+}
+
+.num1{
+    display: flex;
+}
+
+.num2{
+    display: flex;
+}
+
+.em{
+    display: flex;
+}
+
+
+i{
+    margin-right: 5px;
+}
