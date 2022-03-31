@@ -29,25 +29,25 @@ const menu = _ => {
      }
 
      const macAndcheese1 = menus(
-       "/src/img/menu/photo-1604438876548-fb15862d430f.avif",
+       "https://images.unsplash.com/photo-1626028937210-754d2118d5f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=538&q=80",
        "Macaroni and cheese Latte",
        "10 mins"
      );
 
     const macAndcheese2 = menus(
-      "/src/img/menu/photo-1633237308525-cd587cf71926.avif",
+      "https://images.unsplash.com/photo-1633237308525-cd587cf71926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
       "beff steak with broccoli",
       "15 mins"
     );
 
     const macAndcheese3 = menus(
-      "/src/img/menu/photo-1516714435131-44d6b64dc6a2.avif",
+      "https://images.unsplash.com/photo-1578167732217-76eb7b9f10f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
       "rice and vegetable stew",
       "11 mins"
     );
 
     const macAndcheese4 = menus(
-      "/src/img/menu/photo-1632389762435-8c53185e40ae.avif",
+      "https://images.unsplash.com/photo-1595295333158-4742f28fbd85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
       "shrimp rice and beef sauce",
       "12 mins"
     );
